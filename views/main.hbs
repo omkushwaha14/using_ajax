@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Title</title>
+    <script>
+
+
+        $(document).ready(function () {
+            $('#ok').on("click",function () {
+                $("#about").empty();
+                $("#contact").empty();
+                $("#menu").empty();
+
+                $('#home').load('home.hbs')
+            })
+        })
+
+        $(document).ready(function () {
+            $('#abt').on("click",function () {
+                $("#home").empty();
+                $("#contact").empty();
+                $("#menu").empty();
+                $('#about').load('about.hbs')
+            })
+        })
+
+        $(document).ready(function () {
+            $('#con').on("click",function () {
+                $("#home").empty();
+                $("#about").empty();
+                $("#menu").empty();
+                $('#contact').load('contact.hbs')
+            })
+        })
+
+        $(document).ready(function () {
+            $('#men').on("click",function () {
+                $("#home").empty();
+                $("#about").empty();
+                $("#contact").empty();
+                $('#menu').load('menu.hbs')
+            })
+        })
+    </script>
+
+
+
+</head>
+<body>
+<header>
+<Nav class="navbar navbar-dark" expand="md">
+    <div class="container">
+
+
+        <h5> <a href="#home" id="ok">Home</a></h5>
+        <h5><a href="#about" id="abt">About</a></h5>
+        <h5>  <a href="#menu" id="men">Menu</a></h5>
+        <h5> <a href="#contact" id="con">Contact</a></h5>
+
+
+    </div>
+</Nav>
+<Jumbotron>
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12 col-sm-6">
+                <h1>We are for you</h1>
+                <p>We provide you very testy and finger licking goods we are made for serving you best class meal than other!</p>
+            </div>
+        </div>
+    </div>
+</Jumbotron>
+</header>
+
+<div id="home"></div>
+<div id="about"></div>
+<div id="contact"></div>
+<div id="menu"></div>
+
+
+
+
+
+
+<footer>
+<div class="footer">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-4 offset-1 col-sm-2">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/Home">Home</a></li>
+                    <li><a href="/About">About</a></li>
+                    <li><a href="/Menu">Menu</a></li>
+                    <li><a href="/Contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-7 col-sm-5">
+                <h5>Our Address</h5>
+                <address>
+                    110042, Rohini sec-16<br />
+                    Bhawana Road<br />
+                    New delhi,India<br />
+                    <i class="fa fa-phone fa-lg"></i>:+916203807954<br/>
+                    <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:omkushwaha14@gmail.com">Email us !</a>
+                </address>
+            </div>
+            <div class="col-12 col-sm-4 align-self-center">
+                <div className="text-center">
+                    <a className="btn btn-social-icon btn-google" href="http://google.com/+"><i className="fa fa-google-plus"></i></a>
+                    <a className="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i className="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i className="fa fa-linkedin"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i className="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i className="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i className="fa fa-envelope-o"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <p>© Copyright 2018 Foodapp</p>
+            </div>
+        </div>
+    </div>
+</div>
+</footer>
+</body>
+</html>
